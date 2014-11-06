@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title>What Time Is It?</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -10,9 +10,10 @@
 
 <%= render 'layouts/nav' %>
 
+<div class="container">
 <%= yield %>
-
-<%= render 'layouts/footer'%>
+</div>
+<%= render 'layouts/footer' %>
 
 </body>
 </html>

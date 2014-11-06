@@ -3,6 +3,9 @@ Workspace::Application.routes.draw do
   get "static_pages/about"
   get "static_pages/home"
   get "static_pages/contact"
+  resources :users
+  
+  get 'signup' => 'users#new'
   
   root 'static_pages#home'
   # The priority is based upon order of creation: first created -> highest priority.
