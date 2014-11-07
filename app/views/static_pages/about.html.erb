@@ -1,3 +1,15 @@
-<h1>About What Time Is It</h1>
-<hr>
-<p>At WhatTimeIsIt (WTIS), we do what we are best at - provide time for those who want to view the time.</p>.
+
+ <% if logged_in? %>
+  
+
+      
+                    
+ <% else %>
+ <div class="jumbotron">
+    <div class="container">
+      <center><h1>What Time Is It!</h1>
+      <p>At WhatTimeIsIt (WTIS), we do what we are best at - provide time for those who want to view the time.</p>
+      <p><a class="btn btn-success btn-lg" href="signup" role="button">Sign Up</a></p></center>
+      </div>
+      </div>
+<% end %>
