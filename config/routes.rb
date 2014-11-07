@@ -11,7 +11,7 @@ Workspace::Application.routes.draw do
   delete 'signout' => 'sessions#destroy'
  
   
-  root 'static_pages#home'
+  root 'static_pages#about'
   
   
   # The priority is based upon order of creation: first created -> highest priority.
